@@ -1,0 +1,161 @@
+    * {
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .cub {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: 2s;
+    }
+    
+    .cub:hover {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(62, 241, 214);
+        -webkit-transition: background-color 2s ease-all;
+        -moz-transition: background-color 2s ease-all;
+        -o-transition: background-color 2s ease-all;
+        transition: background-color 2s ease-all;
+    }
+    
+    .anime {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: 2s;
+        left: 0%;
+        transform: translateX(0%);
+    }
+    
+    .anime:hover {
+        transform: translateX(100%);
+        left: 0%;
+    }
+    
+    .plane {
+        background-image: url("../images/skynews-boeing-737-plane_5435020.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 70px;
+        height: 30px;
+        transition: 2s;
+    }
+    
+    .plane:hover {
+        animation-duration: 2s;
+        animation-delay: 1s;
+    }
+    
+    .btn {
+        width: 100px;
+        height: 70px;
+        background-color: yellow;
+        color: blue;
+        transition: 2s;
+        border: none;
+    }
+    
+    .btn:hover {
+        color: aliceblue;
+        background-color: green;
+    }
+    
+    .yo {
+        width: 300px;
+        height: 80px;
+        border: 1px solid gray;
+        background-color: rgb(228, 223, 223);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transform: translate(-88%, -2%);
+        transition: 1s;
+    }
+    
+    .yo span {
+        color: white;
+        font-size: 22px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .yo:hover {
+        transform: translate(0%, 0%);
+    }
+    
+    .input {
+        height: 40px;
+        width: 200px;
+    }
+    
+    .div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    
+    .div-1 {
+        width: 154px;
+    }
+    
+    .div-show {
+        position: relative;
+    }
+    
+    .text {
+        height: 30px;
+        width: 300px;
+    }
+    
+    .div-show {
+        display: none;
+    }
+    
+    .text:focus+.div-show {
+        margin-top: 6px;
+        height: 60px;
+        width: 300px;
+        background-color: rgb(46, 214, 46);
+        color: white;
+        display: block;
+    }
+    
+    @keyframes example {
+        0% {
+            background-color: yellow;
+            left: 0px;
+            top: 0px
+        }
+        25% {
+            background-color: blue;
+            left: 200px;
+            top: 0px
+        }
+        50% {
+            background-color: green;
+            left: 200px;
+            top: 200px
+        }
+        75% {
+            background-color: brown;
+            left: 0px;
+            top: 200px;
+        }
+        100% {
+            background-color: red;
+            left: 0px;
+            top: 0px
+        }
+    }
